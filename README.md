@@ -69,7 +69,9 @@ AngularJS
 A Javascript MVC framework
 
 * two way data binding
+* routing
 * modules
+* templates
 * directives
 * testing
 * makes large apps maintainable
@@ -112,6 +114,11 @@ Servicii
 * pagination
 * etc
 
+Many built-in services
+----------------------
+
+* xhr, resource, route, location, 
+
 --------------------------
 
 Dependency Injection
@@ -138,14 +145,6 @@ Templates
 * ng-repeat=””
 * filtre
 * etc.
-
---------------------------
-
-Services
-========
-
-* many built-in services
-* xhr, resource, route, location, 
 
 --------------------------
 
@@ -249,6 +248,14 @@ Filters
 
 * date (locale aware)
 * numbers (locale aware)
+
+--------------------------
+
+So why use AngularJS?
+=====================
+
+* makes large apps maintainable
+* less DOM manipulation
 
 --------------------------
 

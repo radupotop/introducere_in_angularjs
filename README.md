@@ -78,6 +78,8 @@ A Javascript MVC framework
 MVC
 ===
 
+* explain MVC
+
 * A lot more than Model - View - Controller
 * HTML enhanced for web apps!
 * AngularJS lets you extend HTML vocabulary for your application.
@@ -163,7 +165,7 @@ Cum funcționează împreună?
 Case study: Sendmachine
 ========================
 
-!(sendmachine)[img/sm.png]
+![sendmachine](img/sm.png)
 
 Ce are special Sendmachine?
 

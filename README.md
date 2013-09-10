@@ -1,29 +1,37 @@
 Introducere în AngularJS
 ========================
 
+![logo](img/AngularJS-large.png)
 
-Links
------
-http://act2.me/full-stack-web-development/ 
-http://www.sitepoint.com/10-reasons-use-angularjs/ 
-http://en.wikipedia.org/wiki/AngularJS
-
-http://www.igvita.com/posa/high-performance-networking-in-google-chrome/ 
-
+Radu Potop
 
 --------------------------
 
-Introducere în AngularJS
+AngularJS
+=========
+
+A Javascript MVC framework
+
+* two way data binding
+* modules
+* directives
+* testing
+* makes large apps maintainable
 
 --------------------------
 
-Javascript MVC framework?
+WAT??
+=====
 
-[scratch head pic here]
+![scratch head pic](img/consumer-reports-discovers-problem-with-the-ipad.jpg)
 
 Cum am ajuns aici?
+==================
 
 --------------------------
+
+Un pic de istorie
+-----------------
 
 [1.png]
 
@@ -51,9 +59,13 @@ Dropped View
 Code to assemble page (jQuery) -> Javascript MVC Framework
 
 --------------------------
+
 --------------------------
 
-AngularJS - Javascript MVC framework
+AngularJS
+=========
+
+A Javascript MVC framework
 
 * two way data binding
 * modules
@@ -64,15 +76,16 @@ AngularJS - Javascript MVC framework
 --------------------------
 
 MVC
+===
 
-A lot more than Model - View - Controller
-
-HTML enhanced for web apps!
-AngularJS lets you extend HTML vocabulary for your application.
+* A lot more than Model - View - Controller
+* HTML enhanced for web apps!
+* AngularJS lets you extend HTML vocabulary for your application.
 
 --------------------------
 
 Two way data binding
+====================
 
 Modificarile din model se propaga instant in view, si invers.
 
@@ -85,12 +98,21 @@ Model <---> View
 --------------------------
 
 Modules / Servicii
+==================
 
 Unitati care incapsuleaza o functionalitate bine definita / clase
+
+Servicii
+--------
+
+* chart
+* pagination
+* etc
 
 --------------------------
 
 Dependency Injection
+====================
 
 * Serviciile sunt injected in controllere
 * Pot fi mocked pentru testare
@@ -98,6 +120,7 @@ Dependency Injection
 --------------------------
 
 Directive
+=========
 
 Augmenteaza codul HTML prin elemente sau atribute definite de catre developer.
 
@@ -106,6 +129,7 @@ Manipularea de DOM se realizeaza in interiorul directivelor, pentru a nu avea DO
 --------------------------
 
 Templates
+=========
 
 {{phone.name}}
 ng-repeat=””
@@ -114,20 +138,39 @@ etc.
 
 --------------------------
 
-Services - many built-in services
+Services
+========
 
-xhr, resource, route, location, 
+* many built-in services
+* xhr, resource, route, location, 
 
 --------------------------
+
+Cum funcționează împreună?
+==========================
+
+* bootstrapped printr-o directiva/un atribut special
+* sunt lansate serviciile
+* sunt pornite controllerele in functie de ruta curentă
+* sunt compilate templates/views care conțin directivele
+* se face two way data binding intre modele si views prin intermediul scope
+
+
 --------------------------
 
-Sendmachine - Case study
+--------------------------
+
+Case study: Sendmachine
+========================
+
+!(sendmachine)[img/sm.png]
 
 Ce are special Sendmachine?
 
 --------------------------
 
 ACL service + Session service
+=============================
 
 * permite accesul pe routes in functie de credentiale/grup
 groups:
@@ -142,6 +185,7 @@ groups:
 --------------------------
 
 Form Validation service
+=======================
 
 * rulează aceleași reguli atât pe front-end cat si pe back-end
 * regulile folosite de backend pentru validare sunt expuse printr-un API RESTful si refolosite de catre front-end pentru validarea forms
@@ -151,34 +195,42 @@ Form Validation service
 --------------------------
 
 Storage + Request Cache
+=======================
 
 * stocheaza în local storage datele dintr-un form
 * in cazul unui 401, 403 sa poti recupera datele introduse
 
 --------------------------
 
-Lang service - Localizare
+Lang service
+============
 
-* limba+locale poate fi schimbata on the fly
+* Localizare
+* limba + locale poate fi schimbata on the fly
 
 --------------------------
 
-Permalink service - Deeplink
+Permalink service
+=================
 
+* Deeplink
 * linkuire la o anumita stare a aplicatiei
 
 --------------------------
 
 Chart service
+=============
 
 * wraps Highcharts
 * timeseries pe luni / zile / ore
 * polling
-* get: today, last_24_hours, yesterday, last_30_days
+* getPeriod: today, last_24_hours, yesterday, last_30_days
 
 --------------------------
 
 Directives
+==========
+
 * pagination
 * editor (ACE)
 * 
@@ -186,9 +238,23 @@ Directives
 --------------------------
 
 Filters
+=======
 
 * date (locale aware)
 * numbers (locale aware)
 
 --------------------------
 
+Links
+=====
+
+http://act2.me/full-stack-web-development/ 
+http://www.sitepoint.com/10-reasons-use-angularjs/ 
+http://en.wikipedia.org/wiki/AngularJS
+
+http://www.igvita.com/posa/high-performance-networking-in-google-chrome/ 
+
+--------------------------
+
+Mulțumesc
+=========

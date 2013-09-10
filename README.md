@@ -47,6 +47,7 @@ Un pic de istorie
 
 * Evolutia pe server-side: Scripts -> Frameworks MVC
 * HTML -> JSON
+* still using jQuery
 
 ![](img/5.png)
 

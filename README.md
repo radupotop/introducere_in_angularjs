@@ -33,28 +33,28 @@ Cum am ajuns aici?
 Un pic de istorie
 -----------------
 
-[1.png]
+![](img/1.png)
 
-La inceput: give me a doc!
-
---------------------------
-
-[5.png]
-
-Give me a fragment!
-
-Evolutia pe server-side: Scripts -> Frameworks MVC
+* La inceput: give me a doc!
 
 --------------------------
 
-[6.png]
+![](img/4.png)
 
-HTML -> JSON
-Dropped View
+* Give me a fragment!
 
 --------------------------
 
-[8.png]
+* Evolutia pe server-side: Scripts -> Frameworks MVC
+* HTML -> JSON
+
+![](img/5.png)
+
+--------------------------
+
+* Dropped Views pe server-side
+
+![](img/7.png)
 
 Code to assemble page (jQuery) -> Javascript MVC Framework
 
@@ -133,10 +133,10 @@ Manipularea de DOM se realizeaza in interiorul directivelor, pentru a nu avea DO
 Templates
 =========
 
-{{phone.name}}
-ng-repeat=””
-filtre
-etc.
+* {{phone.name}}
+* ng-repeat=””
+* filtre
+* etc.
 
 --------------------------
 
@@ -175,12 +175,13 @@ ACL service + Session service
 =============================
 
 * permite accesul pe routes in functie de credentiale/grup
-groups:
-	* guest
-	* new
-	* emailconfirmed
-	* confirmed
-	* expired
+
+Grupuri:
+
+* guest
+* new
+* confirmed
+* expired
 
 * in caz de 401 pe orice resursa esti scos din aplicatie
 
@@ -189,7 +190,7 @@ groups:
 Form Validation service
 =======================
 
-* rulează aceleași reguli atât pe front-end cat si pe back-end
+* rulează **aceleași** reguli atât pe front-end cat si pe back-end
 * regulile folosite de backend pentru validare sunt expuse printr-un API RESTful si refolosite de catre front-end pentru validarea forms
 * chained rules:
 	* required | valid_email | existing_email
@@ -228,6 +229,8 @@ Chart service
 * polling
 * getPeriod: today, last_24_hours, yesterday, last_30_days
 
+![](img/chart.png)
+
 --------------------------
 
 Directives
@@ -235,7 +238,8 @@ Directives
 
 * pagination
 * editor (ACE)
-* 
+
+	code here
 
 --------------------------
 
@@ -247,8 +251,8 @@ Filters
 
 --------------------------
 
-Links
-=====
+More
+====
 
 http://act2.me/full-stack-web-development/ 
 http://www.sitepoint.com/10-reasons-use-angularjs/ 

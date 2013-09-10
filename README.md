@@ -89,6 +89,13 @@ MVC
 
 --------------------------
 
+Routing
+=======
+
+* explain
+
+--------------------------
+
 Two way data binding
 ====================
 
@@ -132,9 +139,9 @@ Dependency Injection
 Directive
 =========
 
-Augmenteaza codul HTML prin elemente sau atribute definite de catre developer.
-
-Manipularea de DOM se realizeaza in interiorul directivelor, pentru a nu avea DOM manip in controllere si in tot codul.
+* Augmenteaza codul HTML prin elemente sau atribute definite de catre developer.
+* Manipularea de DOM se realizeaza in interiorul directivelor
+* pentru a nu avea DOM manip in controllere si in tot codul.
 
 --------------------------
 
@@ -145,6 +152,8 @@ Templates
 * ng-repeat=””
 * filtre
 * etc.
+
+Declarative is better than procedural
 
 --------------------------
 

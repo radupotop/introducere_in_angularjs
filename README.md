@@ -13,6 +13,7 @@ AngularJS
 A Javascript MVC framework
 
 * two way data binding
+* routing
 * modules
 * directives
 * testing
@@ -33,33 +34,35 @@ Cum am ajuns aici?
 Un pic de istorie
 -----------------
 
-![](img/1.png)
+* La inceputurile web-ului: give me a doc!
 
-* La inceput: give me a doc!
+![](img/1.png)
 
 --------------------------
 
-![](img/4.png)
-
+* Server-side apps au evoluat
 * Give me a fragment!
+
+![](img/4.png)
 
 --------------------------
 
 * Evolutia pe server-side: Scripts -> Frameworks MVC
 * HTML -> JSON
-* still using jQuery
+* Folosim tot jQuery
 
 ![](img/5.png)
 
 --------------------------
 
-* Dropped Views pe server-side
+* Am renunțat la Views pe server-side
+* Codul pentru a asambla pagini: jQuery -> Javascript MVC Framework
 
 ![](img/7.png)
 
-Code to assemble page (jQuery) -> Javascript MVC Framework
-
 --------------------------
+
+![onward](img/steve-ballmer-shrug.jpg)
 
 --------------------------
 
@@ -81,18 +84,20 @@ A Javascript MVC framework
 MVC
 ===
 
-* explain MVC
+Model-View-Controller pattern:
 
-* A lot more than Model - View - Controller
-* HTML enhanced for web apps!
+* separation of concerns (layers)
+* Model = data layer
+* View = presentation layer
+* Controller = business logic (leaga Model si View)
+
+A lot more than MVC:
+
+* HTML enhanced for web apps
 * AngularJS lets you extend HTML vocabulary for your application.
 
---------------------------
 
-Routing
-=======
-
-* explain
+## MVC makes large apps maintainable prin separarea layerelor
 
 --------------------------
 
@@ -103,28 +108,50 @@ Modificarile din model se propaga instant in view, si invers.
 
 Model <---> View
 
-* Mode in sync with the View.
-* Scope = an object that wires up the model and view
-* scope are anumite metode, like $eval
+* Modelul este sincronizat cu View
+* Scope = un obiect care leagă Model și View
+* Scope are anumite metode: $watch, $get, $set
+
+## Ne scutește de la sincronizarea datelor cu prezentarea și invers
+
+--------------------------
+
+Routing
+=======
+
+Încarcă clase/controllere în funcție de link-ul accesat  
+Prin hash part al URL-ului
+
+De exemplu ruta `#/campaign/1` va arăta spre controllerul `campaigns(1)` și spre template-ul `campaigns.html`
+	
+	#/campaign/1 -> campaigns(1){
+		...
+	};
+	
+
+## 
 
 --------------------------
 
 Modules / Servicii
 ==================
 
-Unitati care incapsuleaza o functionalitate bine definita / clase
+Unitati care incapsuleaza o functionalitate bine definita - **clase**
 
 Servicii
 --------
 
 * chart
 * pagination
-* etc
+* date picker
+* etc.
 
 Many built-in services
 ----------------------
 
 * xhr, resource, route, location, 
+
+## Contained, reusable code
 
 --------------------------
 
@@ -133,6 +160,8 @@ Dependency Injection
 
 * Serviciile sunt injected in controllere
 * Pot fi mocked pentru testare
+
+## Testable, mockable
 
 --------------------------
 
@@ -143,24 +172,43 @@ Directive
 * Manipularea de DOM se realizeaza in interiorul directivelor
 * pentru a nu avea DOM manip in controllere si in tot codul.
 
+Ex:
+	
+	<input type="text" name="date" date:picker>
+	
+	
+## Less DOM manipulation, DOM manip is contained
+
 --------------------------
 
 Templates
 =========
 
-* {{phone.name}}
-* ng-repeat=””
-* filtre
-* etc.
+Template
 
-Declarative is better than procedural
+	{{phone.name}}
+	
+Loops
+
+	<div ng-repeat=”phone in phoneList”>
+		{{phone.name}}
+	</div>
+
+Filtre
+	
+	{{15.05 | number}}
+	{{'2013-05-13' | date}}
+	
+etc.
+
+* Declarative is better than procedural
 
 --------------------------
 
 Cum funcționează împreună?
 ==========================
 
-* bootstrapped printr-o directiva/un atribut special
+* aplicația pornește printr-o directivă / un atribut special
 * sunt lansate serviciile
 * sunt pornite controllerele in functie de ruta curentă
 * sunt compilate templates/views care conțin directivele
@@ -168,6 +216,8 @@ Cum funcționează împreună?
 
 
 --------------------------
+
+![onward](img/ballmer-ap-photo.jpg)
 
 --------------------------
 
@@ -281,3 +331,5 @@ http://www.igvita.com/posa/high-performance-networking-in-google-chrome/
 
 Mulțumesc
 =========
+
+![](img/Ballmer-Tampers-the-Milking-of-Microsoft-Main-Cash-Cow-2.png)

@@ -73,7 +73,7 @@
             </aside>
             
             <aside class="page_number">
-              1/28
+              1/30
             </aside>
           </footer>
         </div>
@@ -90,6 +90,7 @@
             <section><p>A Javascript MVC framework</p>
 <ul>
 <li>two way data binding</li>
+<li>routing</li>
 <li>modules</li>
 <li>directives</li>
 <li>testing</li>
@@ -110,7 +111,7 @@
             </aside>
             
             <aside class="page_number">
-              2/28
+              2/30
             </aside>
           </footer>
         </div>
@@ -141,7 +142,7 @@
             </aside>
             
             <aside class="page_number">
-              3/28
+              3/30
             </aside>
           </footer>
         </div>
@@ -155,10 +156,10 @@
             <header><h2>Un pic de istorie</h2></header>
             
             
-            <section><p><img alt="" src="img/1.png" /></p>
-<ul>
-<li>La inceput: give me a doc!</li>
-</ul></section>
+            <section><ul>
+<li>La inceputurile web-ului: give me a doc!</li>
+</ul>
+<p><img alt="" src="img/1.png" /></p></section>
             
           </div>
           <div class="presenter_notes">
@@ -174,7 +175,7 @@
             </aside>
             
             <aside class="page_number">
-              4/28
+              4/30
             </aside>
           </footer>
         </div>
@@ -186,10 +187,11 @@
           <div class="inner">
             
             
-            <section><p><img alt="" src="img/4.png" /></p>
-<ul>
+            <section><ul>
+<li>Server-side apps au evoluat</li>
 <li>Give me a fragment!</li>
-</ul></section>
+</ul>
+<p><img alt="" src="img/4.png" /></p></section>
             
           </div>
           <div class="presenter_notes">
@@ -205,7 +207,7 @@
             </aside>
             
             <aside class="page_number">
-              5/28
+              5/30
             </aside>
           </footer>
         </div>
@@ -220,7 +222,7 @@
             <section><ul>
 <li>Evolutia pe server-side: Scripts -&gt; Frameworks MVC</li>
 <li>HTML -&gt; JSON</li>
-<li>still using jQuery</li>
+<li>Folosim tot jQuery</li>
 </ul>
 <p><img alt="" src="img/5.png" /></p></section>
             
@@ -238,7 +240,7 @@
             </aside>
             
             <aside class="page_number">
-              6/28
+              6/30
             </aside>
           </footer>
         </div>
@@ -251,10 +253,10 @@
             
             
             <section><ul>
-<li>Dropped Views pe server-side</li>
+<li>Am renunțat la Views pe server-side</li>
+<li>Codul pentru a asambla pagini: jQuery -&gt; Javascript MVC Framework</li>
 </ul>
-<p><img alt="" src="img/7.png" /></p>
-<p>Code to assemble page (jQuery) -&gt; Javascript MVC Framework</p></section>
+<p><img alt="" src="img/7.png" /></p></section>
             
           </div>
           <div class="presenter_notes">
@@ -270,17 +272,19 @@
             </aside>
             
             <aside class="page_number">
-              7/28
+              7/30
             </aside>
           </footer>
         </div>
       </div>
       
-      <!-- slide source:  -->
+      <!-- slide source: README.md -->
       <div class="slide-wrapper">
         <div class="slide">
           <div class="inner">
             
+            
+            <section><p><img alt="onward" src="img/steve-ballmer-shrug.jpg" /></p></section>
             
           </div>
           <div class="presenter_notes">
@@ -291,8 +295,12 @@
           </div>
           <footer>
             
+            <aside class="source">
+              Source: <a href="README.md">README.md</a>
+            </aside>
+            
             <aside class="page_number">
-              /28
+              8/30
             </aside>
           </footer>
         </div>
@@ -331,7 +339,7 @@
             </aside>
             
             <aside class="page_number">
-              8/28
+              9/30
             </aside>
           </footer>
         </div>
@@ -345,16 +353,19 @@
             <header><h1>MVC</h1></header>
             
             
-            <section><ul>
-<li>
-<p>explain MVC</p>
-</li>
-<li>
-<p>A lot more than Model - View - Controller</p>
-</li>
-<li>HTML enhanced for web apps!</li>
+            <section><p>Model-View-Controller pattern:</p>
+<ul>
+<li>separation of concerns (layers)</li>
+<li>Model = data layer</li>
+<li>View = presentation layer</li>
+<li>Controller = business logic (leaga Model si View)</li>
+</ul>
+<p>A lot more than MVC:</p>
+<ul>
+<li>HTML enhanced for web apps</li>
 <li>AngularJS lets you extend HTML vocabulary for your application.</li>
-</ul></section>
+</ul>
+<h2>MVC makes large apps maintainable prin separarea layerelor</h2></section>
             
           </div>
           <div class="presenter_notes">
@@ -370,39 +381,7 @@
             </aside>
             
             <aside class="page_number">
-              9/28
-            </aside>
-          </footer>
-        </div>
-      </div>
-      
-      <!-- slide source: README.md -->
-      <div class="slide-wrapper">
-        <div class="slide">
-          <div class="inner">
-            
-            <header><h1>Routing</h1></header>
-            
-            
-            <section><ul>
-<li>explain</li>
-</ul></section>
-            
-          </div>
-          <div class="presenter_notes">
-            <header><h1>Presenter Notes</h1></header>
-            <section>
-            
-            </section>
-          </div>
-          <footer>
-            
-            <aside class="source">
-              Source: <a href="README.md">README.md</a>
-            </aside>
-            
-            <aside class="page_number">
-              10/28
+              10/30
             </aside>
           </footer>
         </div>
@@ -419,10 +398,11 @@
             <section><p>Modificarile din model se propaga instant in view, si invers.</p>
 <p>Model &lt;---&gt; View</p>
 <ul>
-<li>Mode in sync with the View.</li>
-<li>Scope = an object that wires up the model and view</li>
-<li>scope are anumite metode, like $eval</li>
-</ul></section>
+<li>Modelul este sincronizat cu View</li>
+<li>Scope = un obiect care leagă Model și View</li>
+<li>Scope are anumite metode: $watch, $get, $set</li>
+</ul>
+<h2>Ne scutește de la sincronizarea datelor cu prezentarea și invers</h2></section>
             
           </div>
           <div class="presenter_notes">
@@ -438,7 +418,44 @@
             </aside>
             
             <aside class="page_number">
-              11/28
+              11/30
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: README.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Routing</h1></header>
+            
+            
+            <section><p>Încarcă clase/controllere în funcție de link-ul accesat<br />
+Prin hash part al URL-ului</p>
+<p>De exemplu ruta <code>#/campaign/1</code> va arăta spre controllerul <code>campaigns(1)</code> și spre template-ul <code>campaigns.html</code></p>
+<pre><code>#/campaign/1 -&gt; campaigns(1){
+    ...
+};
+</code></pre>
+<h2></h2></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="README.md">README.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              12/30
             </aside>
           </footer>
         </div>
@@ -452,17 +469,19 @@
             <header><h1>Modules / Servicii</h1></header>
             
             
-            <section><p>Unitati care incapsuleaza o functionalitate bine definita / clase</p>
+            <section><p>Unitati care incapsuleaza o functionalitate bine definita - <strong>clase</strong></p>
 <h2>Servicii</h2>
 <ul>
 <li>chart</li>
 <li>pagination</li>
-<li>etc</li>
+<li>date picker</li>
+<li>etc.</li>
 </ul>
 <h2>Many built-in services</h2>
 <ul>
 <li>xhr, resource, route, location, </li>
-</ul></section>
+</ul>
+<h2>Contained, reusable code</h2></section>
             
           </div>
           <div class="presenter_notes">
@@ -478,7 +497,7 @@
             </aside>
             
             <aside class="page_number">
-              12/28
+              13/30
             </aside>
           </footer>
         </div>
@@ -495,7 +514,8 @@
             <section><ul>
 <li>Serviciile sunt injected in controllere</li>
 <li>Pot fi mocked pentru testare</li>
-</ul></section>
+</ul>
+<h2>Testable, mockable</h2></section>
             
           </div>
           <div class="presenter_notes">
@@ -511,7 +531,7 @@
             </aside>
             
             <aside class="page_number">
-              13/28
+              14/30
             </aside>
           </footer>
         </div>
@@ -529,6 +549,55 @@
 <li>Augmenteaza codul HTML prin elemente sau atribute definite de catre developer.</li>
 <li>Manipularea de DOM se realizeaza in interiorul directivelor</li>
 <li>pentru a nu avea DOM manip in controllere si in tot codul.</li>
+</ul>
+<p>Ex:</p>
+<pre><code>&lt;input type="text" name="date" date:picker&gt;
+</code></pre>
+<h2>Less DOM manipulation, DOM manip is contained</h2></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="README.md">README.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              15/30
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: README.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Templates</h1></header>
+            
+            
+            <section><p>Template</p>
+<pre><code>{{phone.name}}
+</code></pre>
+<p>Loops</p>
+<pre><code>&lt;div ng-repeat=”phone in phoneList”&gt;
+    {{phone.name}}
+&lt;/div&gt;
+</code></pre>
+<p>Filtre</p>
+<pre><code>{{15.05 | number}}
+{{'2013-05-13' | date}}
+</code></pre>
+<p>etc.</p>
+<ul>
+<li>Declarative is better than procedural</li>
 </ul></section>
             
           </div>
@@ -545,43 +614,7 @@
             </aside>
             
             <aside class="page_number">
-              14/28
-            </aside>
-          </footer>
-        </div>
-      </div>
-      
-      <!-- slide source: README.md -->
-      <div class="slide-wrapper">
-        <div class="slide">
-          <div class="inner">
-            
-            <header><h1>Templates</h1></header>
-            
-            
-            <section><ul>
-<li>{{phone.name}}</li>
-<li>ng-repeat=””</li>
-<li>filtre</li>
-<li>etc.</li>
-</ul>
-<p>Declarative is better than procedural</p></section>
-            
-          </div>
-          <div class="presenter_notes">
-            <header><h1>Presenter Notes</h1></header>
-            <section>
-            
-            </section>
-          </div>
-          <footer>
-            
-            <aside class="source">
-              Source: <a href="README.md">README.md</a>
-            </aside>
-            
-            <aside class="page_number">
-              15/28
+              16/30
             </aside>
           </footer>
         </div>
@@ -596,7 +629,7 @@
             
             
             <section><ul>
-<li>bootstrapped printr-o directiva/un atribut special</li>
+<li>aplicația pornește printr-o directivă / un atribut special</li>
 <li>sunt lansate serviciile</li>
 <li>sunt pornite controllerele in functie de ruta curentă</li>
 <li>sunt compilate templates/views care conțin directivele</li>
@@ -617,17 +650,19 @@
             </aside>
             
             <aside class="page_number">
-              16/28
+              17/30
             </aside>
           </footer>
         </div>
       </div>
       
-      <!-- slide source:  -->
+      <!-- slide source: README.md -->
       <div class="slide-wrapper">
         <div class="slide">
           <div class="inner">
             
+            
+            <section><p><img alt="onward" src="img/ballmer-ap-photo.jpg" /></p></section>
             
           </div>
           <div class="presenter_notes">
@@ -638,8 +673,12 @@
           </div>
           <footer>
             
+            <aside class="source">
+              Source: <a href="README.md">README.md</a>
+            </aside>
+            
             <aside class="page_number">
-              /28
+              18/30
             </aside>
           </footer>
         </div>
@@ -670,7 +709,7 @@
             </aside>
             
             <aside class="page_number">
-              17/28
+              19/30
             </aside>
           </footer>
         </div>
@@ -714,7 +753,7 @@
             </aside>
             
             <aside class="page_number">
-              18/28
+              20/30
             </aside>
           </footer>
         </div>
@@ -751,7 +790,7 @@
             </aside>
             
             <aside class="page_number">
-              19/28
+              21/30
             </aside>
           </footer>
         </div>
@@ -784,7 +823,7 @@
             </aside>
             
             <aside class="page_number">
-              20/28
+              22/30
             </aside>
           </footer>
         </div>
@@ -817,7 +856,7 @@
             </aside>
             
             <aside class="page_number">
-              21/28
+              23/30
             </aside>
           </footer>
         </div>
@@ -850,7 +889,7 @@
             </aside>
             
             <aside class="page_number">
-              22/28
+              24/30
             </aside>
           </footer>
         </div>
@@ -886,7 +925,7 @@
             </aside>
             
             <aside class="page_number">
-              23/28
+              25/30
             </aside>
           </footer>
         </div>
@@ -922,7 +961,7 @@
             </aside>
             
             <aside class="page_number">
-              24/28
+              26/30
             </aside>
           </footer>
         </div>
@@ -955,7 +994,7 @@
             </aside>
             
             <aside class="page_number">
-              25/28
+              27/30
             </aside>
           </footer>
         </div>
@@ -988,7 +1027,7 @@
             </aside>
             
             <aside class="page_number">
-              26/28
+              28/30
             </aside>
           </footer>
         </div>
@@ -1021,7 +1060,7 @@ http://en.wikipedia.org/wiki/AngularJS</p>
             </aside>
             
             <aside class="page_number">
-              27/28
+              29/30
             </aside>
           </footer>
         </div>
@@ -1034,6 +1073,8 @@ http://en.wikipedia.org/wiki/AngularJS</p>
             
             <header><h1>Mulțumesc</h1></header>
             
+            
+            <section><p><img alt="" src="img/Ballmer-Tampers-the-Milking-of-Microsoft-Main-Cash-Cow-2.png" /></p></section>
             
           </div>
           <div class="presenter_notes">
@@ -1049,7 +1090,7 @@ http://en.wikipedia.org/wiki/AngularJS</p>
             </aside>
             
             <aside class="page_number">
-              28/28
+              30/30
             </aside>
           </footer>
         </div>
@@ -1107,19 +1148,19 @@ http://en.wikipedia.org/wiki/AngularJS</p>
       
       
       <tr id="toc-row-8">
-        <th><a href="#slide8">AngularJS</a></th>
+        <th><a href="#slide8">-</a></th>
         <td><a href="#slide8">8</a></td>
       </tr>
       
       
       <tr id="toc-row-9">
-        <th><a href="#slide9">MVC</a></th>
+        <th><a href="#slide9">AngularJS</a></th>
         <td><a href="#slide9">9</a></td>
       </tr>
       
       
       <tr id="toc-row-10">
-        <th><a href="#slide10">Routing</a></th>
+        <th><a href="#slide10">MVC</a></th>
         <td><a href="#slide10">10</a></td>
       </tr>
       
@@ -1131,104 +1172,116 @@ http://en.wikipedia.org/wiki/AngularJS</p>
       
       
       <tr id="toc-row-12">
-        <th><a href="#slide12">Modules / Servicii</a></th>
+        <th><a href="#slide12">Routing</a></th>
         <td><a href="#slide12">12</a></td>
       </tr>
       
       
       <tr id="toc-row-13">
-        <th><a href="#slide13">Dependency Injection</a></th>
+        <th><a href="#slide13">Modules / Servicii</a></th>
         <td><a href="#slide13">13</a></td>
       </tr>
       
       
       <tr id="toc-row-14">
-        <th><a href="#slide14">Directive</a></th>
+        <th><a href="#slide14">Dependency Injection</a></th>
         <td><a href="#slide14">14</a></td>
       </tr>
       
       
       <tr id="toc-row-15">
-        <th><a href="#slide15">Templates</a></th>
+        <th><a href="#slide15">Directive</a></th>
         <td><a href="#slide15">15</a></td>
       </tr>
       
       
       <tr id="toc-row-16">
-        <th><a href="#slide16">Cum funcționează împreună?</a></th>
+        <th><a href="#slide16">Templates</a></th>
         <td><a href="#slide16">16</a></td>
       </tr>
       
       
       <tr id="toc-row-17">
-        <th><a href="#slide17">Case study: Sendmachine</a></th>
+        <th><a href="#slide17">Cum funcționează împreună?</a></th>
         <td><a href="#slide17">17</a></td>
       </tr>
       
       
       <tr id="toc-row-18">
-        <th><a href="#slide18">ACL service + Session service</a></th>
+        <th><a href="#slide18">-</a></th>
         <td><a href="#slide18">18</a></td>
       </tr>
       
       
       <tr id="toc-row-19">
-        <th><a href="#slide19">Form Validation service</a></th>
+        <th><a href="#slide19">Case study: Sendmachine</a></th>
         <td><a href="#slide19">19</a></td>
       </tr>
       
       
       <tr id="toc-row-20">
-        <th><a href="#slide20">Storage + Request Cache</a></th>
+        <th><a href="#slide20">ACL service + Session service</a></th>
         <td><a href="#slide20">20</a></td>
       </tr>
       
       
       <tr id="toc-row-21">
-        <th><a href="#slide21">Lang service</a></th>
+        <th><a href="#slide21">Form Validation service</a></th>
         <td><a href="#slide21">21</a></td>
       </tr>
       
       
       <tr id="toc-row-22">
-        <th><a href="#slide22">Permalink service</a></th>
+        <th><a href="#slide22">Storage + Request Cache</a></th>
         <td><a href="#slide22">22</a></td>
       </tr>
       
       
       <tr id="toc-row-23">
-        <th><a href="#slide23">Chart service</a></th>
+        <th><a href="#slide23">Lang service</a></th>
         <td><a href="#slide23">23</a></td>
       </tr>
       
       
       <tr id="toc-row-24">
-        <th><a href="#slide24">Directives</a></th>
+        <th><a href="#slide24">Permalink service</a></th>
         <td><a href="#slide24">24</a></td>
       </tr>
       
       
       <tr id="toc-row-25">
-        <th><a href="#slide25">Filters</a></th>
+        <th><a href="#slide25">Chart service</a></th>
         <td><a href="#slide25">25</a></td>
       </tr>
       
       
       <tr id="toc-row-26">
-        <th><a href="#slide26">So why use AngularJS?</a></th>
+        <th><a href="#slide26">Directives</a></th>
         <td><a href="#slide26">26</a></td>
       </tr>
       
       
       <tr id="toc-row-27">
-        <th><a href="#slide27">More</a></th>
+        <th><a href="#slide27">Filters</a></th>
         <td><a href="#slide27">27</a></td>
       </tr>
       
       
       <tr id="toc-row-28">
-        <th><a href="#slide28">Mulțumesc</a></th>
+        <th><a href="#slide28">So why use AngularJS?</a></th>
         <td><a href="#slide28">28</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-29">
+        <th><a href="#slide29">More</a></th>
+        <td><a href="#slide29">29</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-30">
+        <th><a href="#slide30">Mulțumesc</a></th>
+        <td><a href="#slide30">30</a></td>
       </tr>
       
       

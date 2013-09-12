@@ -28,7 +28,7 @@ Features
 WHAT??
 ======
 
-![onward](img/steve-ballmer-shrug.jpg)
+![onward](img/ballmerangry1-580x406.jpg)
 
 Cum am ajuns aici?
 
@@ -65,7 +65,7 @@ Un pic de istorie
 
 --------------------------
 
-![onward](img/GTY_steve_ballmer_jef_130823_16x9_992.jpg)
+![onward](img/clear.jpg)
 
 --------------------------
 
@@ -225,7 +225,7 @@ Cum funcționează împreună?
 
 --------------------------
 
-![onward](img/ballmer-ap-photo.jpg)
+![onward](img/ballmer7jan2009.jpg)
 
 --------------------------
 
@@ -318,7 +318,7 @@ Filters
 
 --------------------------
 
-![MOAR](img/Steve-Ballmer-To-Retire-As-Microsoft-CEO-Within-12-Months-3.jpg)
+![MOAR](img/future.jpg)
 
 --------------------------
 

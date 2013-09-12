@@ -71,6 +71,8 @@ AngularJS
 
 A Javascript MVC framework
 
+SPA - Single Page Applications
+
 * two way data binding
 * routing
 * modules
@@ -162,6 +164,8 @@ Dependency Injection
 * Pot fi mocked pentru testare
 
 ## Testable, mockable
+
+* The "Magic" behind AngularJS Dependency Injection: [http://www.alexrothenberg.com/2013/02/11/the-magic-behind-angularjs-dependency-injection.html](http://www.alexrothenberg.com/2013/02/11/the-magic-behind-angularjs-dependency-injection.html)
 
 --------------------------
 
@@ -307,6 +311,25 @@ Filters
 
 * date (locale aware)
 * numbers (locale aware)
+
+--------------------------
+
+The future
+==========
+
+ECMAScript 6 va implementa:
+
+* modules - modules în AngularJS
+* named parameters - Dependency Injection în AngularJS
+* observers - two-way data binding
+
+HTML va implementa:
+
+* templates
+* components = directives în AngularJS
+
+* Echipa AngularJS lucrează împreuna cu echipa Chromium (Google Chrome)
+* Urmăresc dezvoltarea AngularJS a.î. să se muleze pe viitoarele standarde JS/HTML
 
 --------------------------
 

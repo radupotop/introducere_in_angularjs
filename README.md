@@ -10,7 +10,11 @@ Radu Potop
 AngularJS
 =========
 
-A Javascript MVC framework
+* A Javascript MVC framework
+* Made by Google
+
+Features
+========
 
 * two way data binding
 * routing
@@ -21,13 +25,12 @@ A Javascript MVC framework
 
 --------------------------
 
-WAT??
-=====
+WHAT??
+======
 
-![scratch head pic](img/consumer-reports-discovers-problem-with-the-ipad.jpg)
+![onward](img/steve-ballmer-shrug.jpg)
 
 Cum am ajuns aici?
-==================
 
 --------------------------
 
@@ -56,13 +59,13 @@ Un pic de istorie
 --------------------------
 
 * Am renunțat la Views pe server-side
-* Codul pentru a asambla pagini: jQuery -> Javascript MVC Framework
+* Codul pentru a asambla pagini: jQuery -> Javascript MVC Framework -> Single Page Apps
 
 ![](img/7.png)
 
 --------------------------
 
-![onward](img/steve-ballmer-shrug.jpg)
+![onward](img/GTY_steve_ballmer_jef_130823_16x9_992.jpg)
 
 --------------------------
 
@@ -162,6 +165,7 @@ Dependency Injection
 
 * Serviciile sunt injected in controllere
 * Pot fi mocked pentru testare
+* Named parameters
 
 ## Testable, mockable
 
@@ -314,6 +318,10 @@ Filters
 
 --------------------------
 
+![MOAR](img/Steve-Ballmer-To-Retire-As-Microsoft-CEO-Within-12-Months-3.jpg)
+
+--------------------------
+
 The future
 ==========
 
@@ -341,18 +349,9 @@ So why use AngularJS?
 
 --------------------------
 
-More
-====
-
-http://act2.me/full-stack-web-development/ 
-http://www.sitepoint.com/10-reasons-use-angularjs/ 
-http://en.wikipedia.org/wiki/AngularJS
-
-http://www.igvita.com/posa/high-performance-networking-in-google-chrome/ 
-
---------------------------
-
 Mulțumesc
 =========
 
 ![](img/Ballmer-Tampers-the-Milking-of-Microsoft-Main-Cash-Cow-2.png)
+
+[https://github.com/wooptoo/introducere_in_angularjs](https://github.com/wooptoo/introducere_in_angularjs)

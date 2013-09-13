@@ -16,7 +16,7 @@ AngularJS
 Features
 ========
 
-* two way data binding
+* two-way data binding
 * routing
 * modules
 * directives
@@ -25,8 +25,8 @@ Features
 
 --------------------------
 
-WHAT??
-======
+WHAT?!@?#!
+==========
 
 ![onward](img/ballmerangry1-580x406.jpg)
 
@@ -37,7 +37,7 @@ Cum am ajuns aici?
 Un pic de istorie
 -----------------
 
-* La inceputurile web-ului: give me a doc!
+* La începuturile web-ului: give me a doc!
 
 ![](img/1.png)
 
@@ -50,7 +50,7 @@ Un pic de istorie
 
 --------------------------
 
-* Evolutia pe server-side: Scripts -> Frameworks MVC
+* Evoluția pe server-side: Scripts -> Frameworks MVC
 * HTML -> JSON
 * Folosim tot jQuery
 
@@ -59,11 +59,14 @@ Un pic de istorie
 --------------------------
 
 * Am renunțat la Views pe server-side
-* Codul pentru a asambla pagini: jQuery -> Javascript MVC Framework -> Single Page Apps
+* Pe client-side: jQuery -> Javascript MVC Framework (Single Page Apps)
 
 ![](img/7.png)
 
 --------------------------
+
+Oh
+==
 
 ![onward](img/clear.jpg)
 
@@ -76,13 +79,32 @@ A Javascript MVC framework
 
 SPA - Single Page Applications
 
-* two way data binding
+Features
+========
+
+* two-way data binding
 * routing
 * modules
 * templates
 * directives
 * testing
 * makes large apps maintainable
+
+--------------------------
+
+SPA
+===
+
+Single Page Applications
+
+* Aplicații dinamice
+* O singură pagină HTML care încarcă o aplicație Javascript
+* Încarcă dinamic clase, views, assets
+* Folosesțe o formă de routing
+* No refresh
+* Face apeluri la un API REST pentru date
+
+## Highly dynamic apps: html pages -> web apps
 
 --------------------------
 
@@ -102,14 +124,14 @@ A lot more than MVC:
 * AngularJS lets you extend HTML vocabulary for your application.
 
 
-## MVC makes large apps maintainable prin separarea layerelor
+## Folosind MVC -> aplicațiile mari devin maintainable prin separarea pe layere a codului
 
 --------------------------
 
-Two way data binding
+Two-way data binding
 ====================
 
-Modificarile din model se propaga instant in view, si invers.
+Modificările din model se propagă instant în view și invers.
 
 Model <---> View
 
@@ -117,15 +139,24 @@ Model <---> View
 * Scope = un obiect care leagă Model și View
 * Scope are anumite metode: $watch, $get, $set
 
-## Ne scutește de la sincronizarea datelor cu prezentarea și invers
+## Ne scutește de sincronizarea datelor cu prezentarea și invers
+## SPOT - Single Point Of Truth
+
+--------------------------
+
+![one way data binding](img/one-way-db.png)
+
+--------------------------
+
+![two way data binding](img/two-way-db.png)
 
 --------------------------
 
 Routing
 =======
 
-Încarcă clase/controllere în funcție de link-ul accesat  
-Prin hash part al URL-ului
+* Încarcă clase / controllere în funcție de ruta accesată
+* Se face prin hash part al URL-ului
 
 De exemplu ruta `#/campaign/1` va arăta spre controllerul `campaigns(1)` și spre template-ul `campaigns.html`
 	
@@ -134,7 +165,7 @@ De exemplu ruta `#/campaign/1` va arăta spre controllerul `campaigns(1)` și sp
 	};
 	
 
-## 
+## Routes permit navigarea prin aplicație si deep-linking la pagini
 
 --------------------------
 
@@ -148,7 +179,7 @@ Servicii
 
 * chart
 * pagination
-* date picker
+* validation
 * etc.
 
 Many built-in services
@@ -156,7 +187,7 @@ Many built-in services
 
 * xhr, resource, route, location, 
 
-## Contained, reusable code
+## Contained, reusable code, DRY -> Don't Repeat Yourself
 
 --------------------------
 
@@ -167,7 +198,7 @@ Dependency Injection
 * Pot fi mocked pentru testare
 * Named parameters
 
-## Testable, mockable
+## Testable, mockable code
 
 * The "Magic" behind AngularJS Dependency Injection: [http://www.alexrothenberg.com/2013/02/11/the-magic-behind-angularjs-dependency-injection.html](http://www.alexrothenberg.com/2013/02/11/the-magic-behind-angularjs-dependency-injection.html)
 
@@ -176,21 +207,28 @@ Dependency Injection
 Directive
 =========
 
+Sau widgets, components
+
 * Augmenteaza codul HTML prin elemente sau atribute definite de catre developer.
 * Manipularea de DOM se realizeaza in interiorul directivelor
-* pentru a nu avea DOM manip in controllere si in tot codul.
+* Pentru a nu avea DOM manip peste tot în cod
 
 Ex:
 	
-	<input type="text" name="date" date:picker>
+	<input type="text" name="date" date-picker>
 	
+![date picker](img/datepicker.png)
 	
-## Less DOM manipulation, DOM manip is contained
+## DOM manip is contained, reusable directives în views, DRY
 
 --------------------------
 
 Templates
 =========
+
+* Templates sunt populate cu date din model
+* Declarative is better than procedural
+* Less DOM manipulation
 
 Template
 
@@ -203,13 +241,12 @@ Loops
 	</div>
 
 Filtre
+======
 	
 	{{15.05 | number}}
 	{{'2013-05-13' | date}}
 	
-etc.
-
-* Declarative is better than procedural
+Directive
 
 --------------------------
 
@@ -218,10 +255,9 @@ Cum funcționează împreună?
 
 * aplicația pornește printr-o directivă / un atribut special
 * sunt lansate serviciile
-* sunt pornite controllerele in functie de ruta curentă
-* sunt compilate templates/views care conțin directivele
-* se face two way data binding intre modele si views prin intermediul scope
-
+* sunt pornite controllerele în funcție de rută
+* sunt compilate templates și directivele în views
+* se face two-way data binding între modele și views prin intermediul scope
 
 --------------------------
 
@@ -241,16 +277,16 @@ Ce are special Sendmachine?
 ACL service + Session service
 =============================
 
-* permite accesul pe routes in functie de credentiale/grup
+* Permite accesul userului în funcție de credențiale / grup
+* Accesul este pe routes
+* Un map între grupuri și routes
 
 Grupuri:
 
-* guest
-* new
-* confirmed
+* guest - [/login, /register]
+* new - [/confirm_email]
+* confirmed - [*]
 * expired
-
-* in caz de 401 pe orice resursa esti scos din aplicatie
 
 --------------------------
 
@@ -258,34 +294,19 @@ Form Validation service
 =======================
 
 * rulează **aceleași** reguli atât pe front-end cat si pe back-end
-* regulile folosite de backend pentru validare sunt expuse printr-un API RESTful si refolosite de catre front-end pentru validarea forms
+* regulile folosite de backend pentru validare sunt expuse printr-un API RESTful și refolosite de către front-end pentru validarea forms
 * chained rules:
-	* required | valid_email | existing_email
-
---------------------------
-
-Storage + Request Cache
-=======================
-
-* stocheaza în local storage datele dintr-un form
-* in cazul unui 401, 403 sa poti recupera datele introduse
-
---------------------------
-
-Lang service
-============
-
-* Localizare
-* limba + locale poate fi schimbata on the fly
-
---------------------------
-
-Permalink service
-=================
-
-* Deeplink
-* linkuire la o anumita stare a aplicatiei
-
+	* required | valid_email | email_exists_callback
+	
+![register](img/register.png)
+	
+Directive
+=========
+	
+	<input name="form.email" type="email" validation>
+	
+	<input name="form.password" type="password" validation>
+	
 --------------------------
 
 Chart service
@@ -298,6 +319,49 @@ Chart service
 
 ![](img/chart.png)
 
+* Polling service doar cand pagina este vizibila - cu [Page Visibility API](https://developer.mozilla.org/en-US/docs/Web/Guide/User_experience/Using_the_Page_Visibility_API)
+
+--------------------------
+
+Lang service
+============
+
+* Localizare
+* limba + locale poate fi schimbata on the fly
+
+![lang](img/lang.png)
+
+Filters
+=======
+
+* date (locale aware)
+* numbers (locale aware)
+
+--------------------------
+
+Permalink service
+=================
+
+Deeplink - linkuire la o anumită stare a aplicației
+
+	
+	#/campaigns?c_action=list&c_filter=archived&c_orderby=cdate&c_offset=20
+	
+	#/stats?c_interval=hour&c_start=2013-09-13&c_end=2013-09-14&a_filter=sent
+	
+![pag](img/pag.png)
+
+* Permalink per resursa
+
+--------------------------
+
+
+Storage + Request Cache
+=======================
+
+* stocheaza în local storage datele dintr-un form
+* in cazul unui 401, 403 sa poti recupera datele introduse
+
 --------------------------
 
 Directives
@@ -307,14 +371,6 @@ Directives
 * editor (ACE)
 
 	code here
-
---------------------------
-
-Filters
-=======
-
-* date (locale aware)
-* numbers (locale aware)
 
 --------------------------
 
@@ -337,15 +393,7 @@ HTML va implementa:
 * components = directives în AngularJS
 
 * Echipa AngularJS lucrează împreuna cu echipa Chromium (Google Chrome)
-* Urmăresc dezvoltarea AngularJS a.î. să se muleze pe viitoarele standarde JS/HTML
-
---------------------------
-
-So why use AngularJS?
-=====================
-
-* makes large apps maintainable
-* less DOM manipulation
+* Dezvoltă AngularJS a.î. să se muleze pe viitoarele standarde JS/HTML
 
 --------------------------
 

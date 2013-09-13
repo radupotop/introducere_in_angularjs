@@ -296,9 +296,9 @@ ACL service + Session service
 
 Grupuri:
 
-* guest - [/login, /register]
-* new - [/confirm_email, /myaccount]
-* confirmed - [*]
+* guest - `[/login, /register]`
+* new - `[/confirm_email, /myaccount]`
+* confirmed - `[*]`
 * expired
 
 --------------------------

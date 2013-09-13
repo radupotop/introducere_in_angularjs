@@ -174,8 +174,8 @@ Modules / Servicii
 
 Unitati care incapsuleaza o functionalitate bine definita - **clase**
 
-Servicii
---------
+Putem crea propriile servicii
+-----------------------------
 
 * chart
 * pagination
@@ -200,7 +200,7 @@ Dependency Injection
 
 ## Testable, mockable code
 
-* The "Magic" behind AngularJS Dependency Injection: [http://www.alexrothenberg.com/2013/02/11/the-magic-behind-angularjs-dependency-injection.html](http://www.alexrothenberg.com/2013/02/11/the-magic-behind-angularjs-dependency-injection.html)
+* [The "Magic" behind AngularJS Dependency Injection](http://www.alexrothenberg.com/2013/02/11/the-magic-behind-angularjs-dependency-injection.html)
 
 --------------------------
 

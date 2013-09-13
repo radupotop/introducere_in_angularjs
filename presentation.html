@@ -126,11 +126,12 @@
         <div class="slide">
           <div class="inner">
             
-            <header><h1>WHAT?!@?#!</h1></header>
+            <header><h1><strong>WHAT</strong> are you talking about??</h1></header>
             
             
             <section><p><img alt="onward" src="img/ballmerangry1-580x406.jpg" /></p>
-<p>Cum am ajuns aici?</p></section>
+<p>Cum am ajuns aici?<br />
+De ce e atât de complicat?</p></section>
             
           </div>
           <div class="presenter_notes">
@@ -257,8 +258,8 @@
             
             
             <section><ul>
-<li>Am renunțat la Views pe server-side</li>
 <li>Pe client-side: jQuery -&gt; Javascript MVC Framework (Single Page Apps)</li>
+<li>Am renunțat la Views pe server-side</li>
 </ul>
 <p><img alt="" src="img/7.png" /></p></section>
             
@@ -287,10 +288,10 @@
         <div class="slide">
           <div class="inner">
             
-            <header><h1>Oh</h1></header>
+            <header><h1>Tell me more</h1></header>
             
             
-            <section><p><img alt="onward" src="img/clear.jpg" /></p></section>
+            <section><p><img alt="onward" src="img/Steve-Ballmer.jpg" /></p></section>
             
           </div>
           <div class="presenter_notes">
@@ -364,7 +365,8 @@
             <section><p>Single Page Applications</p>
 <ul>
 <li>Aplicații dinamice</li>
-<li>O singură pagină HTML care încarcă o aplicație Javascript</li>
+<li>O singură pagină HTML care încarcă o aplicație Javascript unitară</li>
+<li>Self-contained: își păstrează state-ul între rute</li>
 <li>Încarcă dinamic clase, views, assets</li>
 <li>Folosesțe o formă de routing</li>
 <li>No refresh</li>
@@ -403,16 +405,16 @@
             <section><p>Model-View-Controller pattern:</p>
 <ul>
 <li>separation of concerns (layers)</li>
-<li>Model = data layer</li>
+<li>Model = data layer, ne servește datele de la server</li>
 <li>View = presentation layer</li>
 <li>Controller = business logic (leaga Model si View)</li>
 </ul>
-<p>A lot more than MVC:</p>
+<p>AngularJS - lot more than MVC:</p>
 <ul>
 <li>HTML enhanced for web apps</li>
-<li>AngularJS lets you extend HTML vocabulary for your application.</li>
+<li>AngularJS lets you extend HTML vocabulary for your application</li>
 </ul>
-<h2>Folosind MVC -&gt; aplicațiile mari devin maintainable prin separarea pe layere a codului</h2></section>
+<h2>Folosind MVC -&gt; aplicațiile mari devin maintainable</h2></section>
             
           </div>
           <div class="presenter_notes">
@@ -447,10 +449,17 @@
 <ul>
 <li>Modelul este sincronizat cu View</li>
 <li>Scope = un obiect care leagă Model și View</li>
-<li>Scope are anumite metode: $watch, $get, $set</li>
 </ul>
 <h2>Ne scutește de sincronizarea datelor cu prezentarea și invers</h2>
-<h2>SPOT - Single Point Of Truth</h2></section>
+<h2>SPOT - Single Point Of Truth</h2>
+<pre><code>JS:
+
+$scope.name = 'steve';
+
+HTML:
+
+&lt;input type="text" ng-model="name"&gt;
+</code></pre></section>
             
           </div>
           <div class="presenter_notes">
@@ -581,7 +590,7 @@
 <li>chart</li>
 <li>pagination</li>
 <li>validation</li>
-<li>etc.</li>
+<li>usernotify</li>
 </ul>
 <h2>Many built-in services</h2>
 <ul>
@@ -619,7 +628,9 @@
             
             <section><ul>
 <li>Serviciile sunt injected in controllere</li>
+<li>Un mod de a rezolva dependințele</li>
 <li>Pot fi mocked pentru testare</li>
+<li>Înlocuind serviciile cu dummy services</li>
 <li>Named parameters</li>
 </ul>
 <h2>Testable, mockable code</h2>
@@ -743,7 +754,7 @@
             
             
             <section><ul>
-<li>aplicația pornește printr-o directivă / un atribut special</li>
+<li>aplicația pornește printr-un atribut special pe elementul <code>&lt;html&gt;</code> (bootstrapped)</li>
 <li>sunt lansate serviciile</li>
 <li>sunt pornite controllerele în funcție de rută</li>
 <li>sunt compilate templates și directivele în views</li>
@@ -775,8 +786,10 @@
         <div class="slide">
           <div class="inner">
             
+            <header><h1>Okay, cool</h1></header>
             
-            <section><p><img alt="onward" src="img/ballmer7jan2009.jpg" /></p></section>
+            
+            <section><p><img alt="super" src="img/ballmer-ap-photo.jpg" /></p></section>
             
           </div>
           <div class="presenter_notes">
@@ -840,12 +853,11 @@
             <section><ul>
 <li>Permite accesul userului în funcție de credențiale / grup</li>
 <li>Accesul este pe routes</li>
-<li>Un map între grupuri și routes</li>
 </ul>
 <p>Grupuri:</p>
 <ul>
 <li>guest - [/login, /register]</li>
-<li>new - [/confirm_email]</li>
+<li>new - [/confirm_email, /myaccount]</li>
 <li>confirmed - [*]</li>
 <li>expired</li>
 </ul></section>
@@ -967,8 +979,8 @@
 <p><img alt="lang" src="img/lang.png" /></p>
 <h1>Filters</h1>
 <ul>
-<li>date (locale aware)</li>
-<li>numbers (locale aware)</li>
+<li>date - locale aware</li>
+<li>numbers - locale aware</li>
 </ul></section>
             
           </div>
@@ -999,15 +1011,15 @@
             <header><h1>Permalink service</h1></header>
             
             
-            <section><p>Deeplink - linkuire la o anumită stare a aplicației</p>
-<pre><code>#/campaigns?c_action=list&amp;c_filter=archived&amp;c_orderby=cdate&amp;c_offset=20
-
-#/stats?c_interval=hour&amp;c_start=2013-09-13&amp;c_end=2013-09-14&amp;a_filter=sent
+            <section><ul>
+<li>Deeplink - linkuire la o anumită stare a aplicației</li>
+<li>Permalink per resursa / serviciu</li>
+</ul>
+<p>&nbsp;</p>
+<pre><code>#/campaigns?c_orderby=cdate&amp;c_offset=20
 </code></pre>
-<p><img alt="pag" src="img/pag.png" /></p>
-<ul>
-<li>Permalink per resursa</li>
-</ul></section>
+<p>.</p>
+<p><img alt="pag" src="img/pag.png" /></p></section>
             
           </div>
           <div class="presenter_notes">
@@ -1034,12 +1046,13 @@
         <div class="slide">
           <div class="inner">
             
-            <header><h1>Storage + Request Cache</h1></header>
+            <header><h1>Shared bundles</h1></header>
             
             
             <section><ul>
-<li>stocheaza în local storage datele dintr-un form</li>
-<li>in cazul unui 401, 403 sa poti recupera datele introduse</li>
+<li>servicii + directive + helpers = bundle</li>
+<li>bundles shared între aplicații</li>
+<li>Sendmachine &lt;---&gt; intranet app &lt;---&gt; hosting app</li>
 </ul></section>
             
           </div>
@@ -1070,13 +1083,18 @@
             <header><h1>Directives</h1></header>
             
             
-            <section><ul>
-<li>pagination</li>
-<li>
-<p>editor (ACE)</p>
-<p>code here</p>
-</li>
-</ul></section>
+            <section><p>Pagination </p>
+<pre><code>&lt;div pagination&gt;&lt;/div&gt;
+</code></pre>
+<p>IDE (ACE)</p>
+<pre><code>&lt;div editor="form.editor"&gt;&lt;/div&gt;
+</code></pre>
+<p>WYSIWYG</p>
+<pre><code>&lt;div template-editor="form.editor"&gt;&lt;/div&gt;
+</code></pre>
+<p>Validation</p>
+<pre><code>&lt;input name="form.email" type="email" validation&gt;
+</code></pre></section>
             
           </div>
           <div class="presenter_notes">
@@ -1102,6 +1120,8 @@
       <div class="slide-wrapper">
         <div class="slide">
           <div class="inner">
+            
+            <header><h1>But wait there's more</h1></header>
             
             
             <section><p><img alt="MOAR" src="img/future.jpg" /></p></section>
@@ -1150,6 +1170,7 @@
 <p>Echipa AngularJS lucrează împreuna cu echipa Chromium (Google Chrome)</p>
 </li>
 <li>Dezvoltă AngularJS a.î. să se muleze pe viitoarele standarde JS/HTML</li>
+<li>Tools: Batarang, Webstorm extension, tutoriale</li>
 </ul></section>
             
           </div>
@@ -1224,7 +1245,7 @@
       
       
       <tr id="toc-row-3">
-        <th><a href="#slide3">WHAT?!@?#!</a></th>
+        <th><a href="#slide3"><strong>WHAT</strong> are you talking about??</a></th>
         <td><a href="#slide3">3</a></td>
       </tr>
       
@@ -1255,7 +1276,7 @@
       
       
       <tr id="toc-row-8">
-        <th><a href="#slide8">Oh</a></th>
+        <th><a href="#slide8">Tell me more</a></th>
         <td><a href="#slide8">8</a></td>
       </tr>
       
@@ -1333,7 +1354,7 @@
       
       
       <tr id="toc-row-21">
-        <th><a href="#slide21">-</a></th>
+        <th><a href="#slide21">Okay, cool</a></th>
         <td><a href="#slide21">21</a></td>
       </tr>
       
@@ -1375,7 +1396,7 @@
       
       
       <tr id="toc-row-28">
-        <th><a href="#slide28">Storage + Request Cache</a></th>
+        <th><a href="#slide28">Shared bundles</a></th>
         <td><a href="#slide28">28</a></td>
       </tr>
       
@@ -1387,7 +1408,7 @@
       
       
       <tr id="toc-row-30">
-        <th><a href="#slide30">-</a></th>
+        <th><a href="#slide30">But wait there's more</a></th>
         <td><a href="#slide30">30</a></td>
       </tr>
       

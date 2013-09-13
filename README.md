@@ -25,12 +25,13 @@ Features
 
 --------------------------
 
-WHAT?!@?#!
-==========
+**WHAT** are you talking about??
+============================
 
 ![onward](img/ballmerangry1-580x406.jpg)
 
-Cum am ajuns aici?
+Cum am ajuns aici?  
+De ce e atât de complicat?
 
 --------------------------
 
@@ -58,17 +59,17 @@ Un pic de istorie
 
 --------------------------
 
-* Am renunțat la Views pe server-side
 * Pe client-side: jQuery -> Javascript MVC Framework (Single Page Apps)
+* Am renunțat la Views pe server-side
 
 ![](img/7.png)
 
 --------------------------
 
-Oh
-==
+Tell me more
+============
 
-![onward](img/clear.jpg)
+![onward](img/Steve-Ballmer.jpg)
 
 --------------------------
 
@@ -98,7 +99,8 @@ SPA
 Single Page Applications
 
 * Aplicații dinamice
-* O singură pagină HTML care încarcă o aplicație Javascript
+* O singură pagină HTML care încarcă o aplicație Javascript unitară
+* Self-contained: își păstrează state-ul între rute
 * Încarcă dinamic clase, views, assets
 * Folosesțe o formă de routing
 * No refresh
@@ -114,17 +116,17 @@ MVC
 Model-View-Controller pattern:
 
 * separation of concerns (layers)
-* Model = data layer
+* Model = data layer, ne servește datele de la server
 * View = presentation layer
 * Controller = business logic (leaga Model si View)
 
-A lot more than MVC:
+AngularJS - lot more than MVC:
 
 * HTML enhanced for web apps
-* AngularJS lets you extend HTML vocabulary for your application.
+* AngularJS lets you extend HTML vocabulary for your application
 
 
-## Folosind MVC -> aplicațiile mari devin maintainable prin separarea pe layere a codului
+## Folosind MVC -> aplicațiile mari devin maintainable
 
 --------------------------
 
@@ -137,10 +139,17 @@ Model <---> View
 
 * Modelul este sincronizat cu View
 * Scope = un obiect care leagă Model și View
-* Scope are anumite metode: $watch, $get, $set
 
 ## Ne scutește de sincronizarea datelor cu prezentarea și invers
 ## SPOT - Single Point Of Truth
+
+	JS:
+	
+    $scope.name = 'steve';
+    
+    HTML:
+    
+    <input type="text" ng-model="name">
 
 --------------------------
 
@@ -180,7 +189,7 @@ Putem crea propriile servicii
 * chart
 * pagination
 * validation
-* etc.
+* usernotify
 
 Many built-in services
 ----------------------
@@ -195,7 +204,9 @@ Dependency Injection
 ====================
 
 * Serviciile sunt injected in controllere
+* Un mod de a rezolva dependințele
 * Pot fi mocked pentru testare
+* Înlocuind serviciile cu dummy services
 * Named parameters
 
 ## Testable, mockable code
@@ -253,7 +264,7 @@ Directive
 Cum funcționează împreună?
 ==========================
 
-* aplicația pornește printr-o directivă / un atribut special
+* aplicația pornește printr-un atribut special pe elementul `<html>` (bootstrapped)
 * sunt lansate serviciile
 * sunt pornite controllerele în funcție de rută
 * sunt compilate templates și directivele în views
@@ -261,7 +272,10 @@ Cum funcționează împreună?
 
 --------------------------
 
-![onward](img/ballmer7jan2009.jpg)
+Okay, cool
+==========
+
+![super](img/ballmer-ap-photo.jpg)
 
 --------------------------
 
@@ -279,12 +293,11 @@ ACL service + Session service
 
 * Permite accesul userului în funcție de credențiale / grup
 * Accesul este pe routes
-* Un map între grupuri și routes
 
 Grupuri:
 
 * guest - [/login, /register]
-* new - [/confirm_email]
+* new - [/confirm_email, /myaccount]
 * confirmed - [*]
 * expired
 
@@ -334,45 +347,58 @@ Lang service
 Filters
 =======
 
-* date (locale aware)
-* numbers (locale aware)
+* date - locale aware
+* numbers - locale aware
 
 --------------------------
 
 Permalink service
 =================
 
-Deeplink - linkuire la o anumită stare a aplicației
+* Deeplink - linkuire la o anumită stare a aplicației
+* Permalink per resursa / serviciu
 
-	
-	#/campaigns?c_action=list&c_filter=archived&c_orderby=cdate&c_offset=20
-	
-	#/stats?c_interval=hour&c_start=2013-09-13&c_end=2013-09-14&a_filter=sent
-	
+&nbsp;
+
+	#/campaigns?c_orderby=cdate&c_offset=20
+.
+
 ![pag](img/pag.png)
-
-* Permalink per resursa
 
 --------------------------
 
+Shared bundles
+==============
 
-Storage + Request Cache
-=======================
-
-* stocheaza în local storage datele dintr-un form
-* in cazul unui 401, 403 sa poti recupera datele introduse
+* servicii + directive + helpers = bundle
+* bundles shared între aplicații
+* Sendmachine <---> intranet app <---> hosting app
 
 --------------------------
 
 Directives
 ==========
 
-* pagination
-* editor (ACE)
+Pagination 
 
-	code here
+	<div pagination></div>
+
+IDE (ACE)
+
+	<div editor="form.editor"></div>
+
+WYSIWYG
+
+	<div template-editor="form.editor"></div>
+	
+Validation
+
+	<input name="form.email" type="email" validation>
 
 --------------------------
+
+But wait there's more
+=====================
 
 ![MOAR](img/future.jpg)
 
@@ -394,6 +420,7 @@ HTML va implementa:
 
 * Echipa AngularJS lucrează împreuna cu echipa Chromium (Google Chrome)
 * Dezvoltă AngularJS a.î. să se muleze pe viitoarele standarde JS/HTML
+* Tools: Batarang, Webstorm extension, tutoriale
 
 --------------------------
 
